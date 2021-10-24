@@ -10,9 +10,6 @@ jobs:
       - uses: actions/setup-python@v1
         with:
           python-version: 3.8
-      - name: Install packages
-        run:
-          Rscript -e "install.packages(c('tidyverse', 'showtext'))"
       - name: Render python plot file
         run:
           Rscript -e "source('notebooks/mturk_vis.ipynb')"
