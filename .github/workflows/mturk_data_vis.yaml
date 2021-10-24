@@ -12,7 +12,7 @@ jobs:
           python-version: 3.8
       - name: Render python plot file
         run:
-          pythonscript -e "source('notebooks/mturk_vis.ipynb')"
+         -e "source('notebooks/mturk_vis.ipynb')"
       - name: Commit results
         run: |
           git config --local user.email "actions@github.com"
